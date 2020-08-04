@@ -9,6 +9,7 @@ document.getElementById('book-form').addEventListener('submit', function (e) {
     const book = new Book(title, author, isbn);
 
     const ui = new UI();
+    console.log(JSON.stringify(book));
 
     if (title === '' || author === '' || isbn === '') {
         className = 'error';
